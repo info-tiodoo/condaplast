@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_tio2_sale_sales_order_filter" model="ir.ui.view">
+        <field name="name">sale.order.search.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+        <field name="arch" type="xml">
+            <field name="product_id" position='after' >
+                <field name="code_cliente"/>
+                <field name="desc_cliente"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
