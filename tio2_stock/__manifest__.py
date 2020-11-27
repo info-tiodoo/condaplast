@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Extend Sale - Condaplast",
+    'name': "Extend Stock - Condaplast",
     'version' : '10.0.1.1.1',
-    'summary': """
-        
+    'description': """
+        - Add 'Code' and 'Description' fields to Stock picking search view
     """,
     'sequence': 30,
     'author': "TiOdoo",
     'website': "http://tiodoo.pt",
     'category': 'Accounting',
-    'depends': ['stock'],
+    'depends': ['gst_condaplast_stock'],
     'data': [
         'views/stock_picking_view.xml',
     ],

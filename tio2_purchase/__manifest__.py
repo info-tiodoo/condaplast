@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Extend Sale - Condaplast",
+    'name': "Extend Purchase - Condaplast",
     'version' : '10.0.1.1.1',
-    'summary': """
-        
+    'description': """
+        - Add Supplier 'Code' and 'Description' fields to Purchase order search view
     """,
     'sequence': 30,
     'author': "TiOdoo",
