@@ -4,10 +4,10 @@
     <record id="view_tio2_product_product_filter" model="ir.ui.view">
         <field name="name">product.product.search.inherit</field>
         <field name="model">product.product</field>
-        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="inherit_id" ref="product.product_search_form_view"/>
         <field name="arch" type="xml">
             <field name="categ_id" position='after' >
-                <field name="marca_id"/>
+                <field name="marca_id" string='Marca'/>
             </field>
         </field>
     </record>
