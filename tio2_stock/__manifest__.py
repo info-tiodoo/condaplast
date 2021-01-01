@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Extend Stock - Condaplast",
-    'version' : '10.0.1.1.2',
+    'version' : '10.0.1.2.2',
     'description': """
         - Add 'Code' and 'Description' fields to Stock picking search view
     """,
