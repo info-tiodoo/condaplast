@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Extend Purchase - Condaplast",
-    'version' : '10.0.1.2.1',
+    'version' : '10.0.1.2.2',
     'description': """
         - Add Supplier 'Code' and 'Description' fields to Purchase order search view
     """,
@@ -19,4 +19,5 @@
     'installable': True,
     'application': False,
     'auto_install': False,
+    'post_init_hook': '_update_suppliers',
 }
