@@ -9,7 +9,7 @@
     'author': "TiOdoo",
     'website': "http://tiodoo.pt",
     'category': 'Accounting',
-    'depends': ['gst_condaplast_sale'],
+    'depends': ['sale'], #['gst_condaplast_sale'],
     'data': [
         'views/sale_order_view.xml',
     ],
@@ -19,4 +19,5 @@
     'installable': True,
     'application': False,
     'auto_install': False,
+    'post_init_hook': '_update_customers',
 }
