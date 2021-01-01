@@ -6,5 +6,10 @@ from odoo import api, fields, models, _
 class StockPickingTO2(models.Model):
     _inherit = "stock.picking"
 
-    code_cliente = fields.Char(related='pack_operation_product_ids.code_cliente')
-    desc_cliente = fields.Char(related='pack_operation_product_ids.desc_cliente')
+    more_cliente = fields.Char('Producto Cliente/Proveedor')
+
+    @api.onchange('pack_operation_product_ids')
+    def onchange_all_cliente(self):
+        self.more_cliente = ''.join("%s %s" %
+                                    (line.code_cliente, line.desc_cliente)
+                                    for line in self.pack_operation_product_ids)

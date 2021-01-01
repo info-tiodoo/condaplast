@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Extend Sale - Condaplast",
-    'version' : '10.0.1.1.1',
+    'version' : '10.0.1.2.1',
     'description': """
         - Add Customer 'Code' and 'Description' fields to Sale order search view
     """,
@@ -9,7 +9,7 @@
     'author': "TiOdoo",
     'website': "http://tiodoo.pt",
     'category': 'Accounting',
-    'depends': ['sale'], #['gst_condaplast_sale'],
+    'depends': ['gst_condaplast_sale'],
     'data': [
         'views/sale_order_view.xml',
     ],
