@@ -1,2 +1,2 @@
 # condaplast
-Repositorio de Condaplast
+Repositorio de Condaplast ( Odoo v10 )
